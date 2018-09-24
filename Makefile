@@ -1,11 +1,7 @@
-#HOSTTYPE = i386-linux
-
 # Destination to write binaries
-#BINDIR = ./bin/
 LIBDIR = ./lib/
 
 #Optimisation flags
-# Heavy
 OPTFLAGS = -O3 
 
 #Produce dbx output 
