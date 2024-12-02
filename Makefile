@@ -41,10 +41,10 @@ lt_filenames.o : lt_filenames.c lt_filenames.h
 # Libraries
 #
 ${LIBDIR}liblt_filenames.so : lt_filenames.c lt_filenames.h Makefile
-	${CC} ${CFLAGS} ${CCSHAREDFLAG} -o ${LIBDIR}liblt_filenames.so lt_filenames.c ${DEBUG} ${CCHECKFLAG} ${OPTFLAG}
+	${CC} ${CFLAGS} ${CCSHAREDFLAG} -fPIC -o ${LIBDIR}liblt_filenames.so lt_filenames.c ${DEBUG} ${CCHECKFLAG} ${OPTFLAG}
 
 ${LIBDIR}liblt_filenames.a : lt_filenames.c lt_filenames.h Makefile
-	${CC} ${CFLAGS} ${CCSTATICFLAG} -o ${LIBDIR}liblt_filenames.a lt_filenames.c   ${DEBUG}  ${CCHECKFLAG} ${OPTFLAG}
+	${CC} ${CFLAGS} ${CCSTATICFLAG}       -o ${LIBDIR}liblt_filenames.a lt_filenames.c   ${DEBUG}  ${CCHECKFLAG} ${OPTFLAG}
 
 
 
