@@ -48,8 +48,6 @@ ${LIBDIR}/liblt_filenames.a : lt_filenames.c lt_filenames.h Makefile
 	${CC} ${CFLAGS} -c ${CCSTATICFLAG} -o ${LIBDIR}/liblt_filenames.a lt_filenames.c   ${DEBUG}  ${CCHECKFLAG} ${OPTFLAG}
 
 
-
-
 clean:
 	rm -f *.o
 
