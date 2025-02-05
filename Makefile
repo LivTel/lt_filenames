@@ -1,3 +1,5 @@
+include ../Makefile.common
+
 # Destination to write binaries
 #LIBDIR = ./lib/
 LIBDIR = ${LT_LIB_HOME}
@@ -8,7 +10,7 @@ OPTFLAGS = -O3
 #Produce dbx output 
 #CFLAGS = -g
 #CFLAGS = -pg
-CFLAGS = 
+CFLAGS = $(SHARED_LIB_CFLAGS)
 
 #DEBUG = -DARCHIVE_DEBUG -g 
 
