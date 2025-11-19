@@ -15,7 +15,7 @@ CFLAGS = $(SHARED_LIB_CFLAGS)
 #DEBUG = -DARCHIVE_DEBUG -g 
 
 #Compile as shared/static library (Gets set in lt_environment anyway)
-CCSHAREDFLAG = -shared
+CCSHAREDFLAG = -shared -fPIC
 CCSTATICFLAG = -static
 
 #Obsessive compiler check flags
